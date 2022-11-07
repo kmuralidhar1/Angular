@@ -1,0 +1,16 @@
+Angular Components?
+
+ Basic building block to build any application. Every angular application should have atleast 1 compoent.
+
+
+
+ To generate a new component Syntax:
+  ng generate component {component_name}
+
+  Basic structure of an application
+   SideNavigation--??
+
+   Header 
+   Body
+   Footer
+   Side Navigation
