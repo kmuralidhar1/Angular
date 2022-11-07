@@ -1,0 +1,15 @@
+1. Node js and NPm should be install
+
+2. Install command line for angular
+   
+    npm install -g @angular/cli  
+
+    or npm install --global @angular/cli@next
+
+3. ng new angularproject
+
+4. cd angularprojct
+
+5. ng serve
+
+ The angular project will run on the default port: 4200
