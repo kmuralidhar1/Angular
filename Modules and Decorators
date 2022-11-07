@@ -1,0 +1,68 @@
+Angular Documentation : https://angular.io/
+
+ Modules in Angular:
+
+ - Modules in Angular are logical functional components(multiple components) become part of components.
+
+
+Main.ts wil be executed first.
+Index.html is the basic structre of the application.
+
+
+How does Angular Know the modules, components, services..
+
+ Decorators: 
+    Decorators are metadata or type of processing that Angular does.
+
+     Typescript feature used for passing metadata.
+     When these are called?
+       Called / Invoked during Runtime..
+       are functions that will return a function.
+
+Decorators start with '@'
+ 
+    How many types of decorators?
+    1. Class decorators.
+        @NgModules, @Component
+
+     @NgModules will have four properties:  
+        declarations: [] // It contains the information of the components
+        imports : browsermodules, approuting modules, and different modules that is required for the application to build.
+        providers: Basically the services of the application??
+        bootstrap:  Intial component that needs to be loaded in the start of application.
+        .
+        .
+        exports etc..
+
+
+   @Component
+
+    {prefered_name}.component.ts
+    {prefered_name}.component.html
+    {prefered_name}.component.css
+
+   selector: name to be identified and used across the html files..
+   htmltemplate
+   csstemplate
+
+    2, Property decorators.
+        @Input, @Output
+    3. Methods/Event decorators.
+        @HostListners
+    4. Parameter decorators.
+        @Inject
+
+ ****** Whenever the decorators are defined those will be imported from *****
+                            "@angular/core"
+
+*** Every application has only one main module..***
+
+These things like Routing, core, typescript, etcetc..
+ part of Framework.
+ What is a Framework?
+   Basic structure, Framework is built using programming languages.
+
+    Angular Framework: 
+
+    is used to build single page applications(SPA) using ts, html and css.
+    
