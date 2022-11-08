@@ -1,0 +1,33 @@
+07-11-2022:
+
+==>pipes:A pipe is a class decorated with pipe metadata.
+Angular has different types of pipes such as DatePipe, UpperCasePipe, LowerCasePipe, CurrencyPipe, and PercentPipe. They are all available for use in any template.
+command: '|'
+
+
+pipes are classified as:
+
+                                     ___   Parametrized pipes
+Custom pipes  &   Build in Pipes==>|
+                                     ___   Chaining pipes
+                          
+a)built in pipes:- pipes such as DatePipe, UpperCasePipe, LowerCasePipe, CurrencyPipe, and PercentPipe. They are all available for use in any template.
+Angular provides several built-in pipes to beautify the data being shown on the user interface.  
+e.g.,to generate the pipes thw syntax: ng g p {pipes name}
+
+In Pipes.component.html, we’ve interpolated the properties and used pipes to format them.
+b)parameterized pipes:- 
+when we pass any parameters to the pipes, it is called parameterized pipes we can pass n number of parameters to pipes using a colon (:).
+syntax:- <property-name> | pipe-name
+medium Time : {{today | date:mediumTime}}
+“date” is a simple non-parameterized pipe that is used to convert the current date in the MMM dd, yyyy format.
+C)chaining pipes:-
+You can chain pipes together in potentially useful combinations. In the following example, to display the birthday in uppercase, 
+the birthday is chained to the DatePipe and on to the UpperCasePipe. The birthday displays as APR 15, 1988.
+
+syntax:The chained hero's birthday is
+{{ birthday | date | uppercase}}
+
+d) Custom pipe:- 
+we can write our own custom pipes. Here's a custom pipe named ExponentialStrengthPipe that can boost a hero's powers.
+syntax:-ng generate <pipe_name>
