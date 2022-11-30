@@ -27,3 +27,9 @@ When canActivate returns true, the user can activate the route. When canActivate
 In the above example, we allow access when the user is logged in.
 canActivate can also be used to notify the user that they can't access that part of the application, or redirect them to the login page.
 
+the difference between canActivate and canActivateChild RouteGuard, 
+if we apply canActivateGuard it always check parent route accessibility. If Parent route is accessible, automatically its child routes are also accessible. But in some cases we may have some other criteria to check
+before executing child route event when parent route is accessible. 
+
+ CanActivateChild Guard is simply a service that implements the CanActivateChild interface and overrides the canActivateChild() method.
+ In this case, it always returns true which means access to child Routes will be always granted to the user when this guard is applied to a route.
