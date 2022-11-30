@@ -1,0 +1,29 @@
+--->Angular provides lots of features and ready-to-use services which allow seamless development of web applicationAnd protecting routes with 
+Guards are one of the important and useful feature.
+--> we can navigate to any route but sometimes you need to control access to different parts of your app.
+
+-->Guards in angular are  interfaces which can tell the router whether or not it should allow navigation to a requested route.
+--> So If all guards return true, navigation will continue. If any guard returns false, navigation will be cancelled.
+-->Guards return either true if the user can access a route or false if they can’t.
+
+
+There are five different types of Guards:
+
+CanActivate
+Checks to see if a user can visit a route.
+
+CanActivateChild
+Checks to see if a user can visit a routes children.
+
+CanDeactivate
+Checks to see if a user can exit a route.
+
+Resolve
+Performs route data retrieval before route activation.
+
+==>CanActivate Route
+This class implements the CanActivate interface by implementing the canActivate function.
+When canActivate returns true, the user can activate the route. When canActivate returns false, the user cannot access the route. 
+In the above example, we allow access when the user is logged in.
+canActivate can also be used to notify the user that they can't access that part of the application, or redirect them to the login page.
+
